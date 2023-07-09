@@ -1,0 +1,116 @@
+<html>
+<head>
+<title> Jquery</title>
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<style type="text/css">
+
+#a,#f,#k,#p{
+ color:green;
+ }
+ #b,#c,#n,#o{
+ color:blue;
+ }
+ #d,#g,#m,#j{
+ color:red;
+ }
+ #h,#i,#e,#l{
+ color:brown;
+ }
+ 
+ #a1,#f1,#k1,#p1{
+ background-color: red;
+ }
+ #b1,#c1,#n1,#o1{ background-color:pink;
+
+ }
+ #d1,#g1,#m1,#j1{
+ background-color:lightblue;
+ }
+ #h1,#i1,#e1,#l1{
+ background-color:yellow;
+ }
+
+</style>
+</head>
+
+<body>
+<h2><marquee behavior="scroll" direction="right"> FIRST TABLE</marquee></h2>
+
+<table border="2" width="800" height="200"> 
+ <th id="a"> A</th>
+ <th id="b">B</th>
+ <th id="c"> C </th>
+ <th id="d">D</th>
+<tr>
+ <td id="e"> E</td>
+ <td id="f">F</td>
+ <td id="g">G</td>
+ <td id="h">H</td>
+</tr>
+<tr>
+ <td id="i">I</td>
+<td id="j">J</td>
+ <td id="k">K</td>
+<td id="l">L</td>
+</tr>
+<tr>
+ <td id="m">M</td>
+<td id="n">N</td>
+ <td id="o">O</td>
+ <td id="p">P</td>
+</tr> 
+</table>
+<hr>
+<h2> <marquee behavior ="scroll" directio="right">SECOND TABLE</marquee></h2>
+<table border="2" width="800" height="200" cellspacing="20px"> 
+ <th id="a1"> A</th>
+ <th id="b1">B</th>
+ <th id="c1"> C </th>
+ <th id="d1">D</th>
+<tr>
+ <td id="e1"> E</td>
+ <td id="f1">F</td>
+ <td id="g1">G</td>
+ <td id="h1">H</td>
+</tr>
+<tr>
+ <td id="i1">I</td>
+<td id="j1">J</td>
+ <td id="k1">K</td>
+<td id="l1">L</td>
+</tr>
+<tr>
+ <td id="m1">M</td>
+<td id="n1">N</td>
+ <td id="o1">O</td>
+ <td id="p1">P</td>
+</tr> 
+</table>
+
+<script type="text/javascript">
+
+$("#a,#b,#c,#d,#e,#f,#g,#h,#i,#j,#k,#l,#m,#n,#o,#p,#table").click(function(){
+$(this).css("display","none");
+});
+
+$("#a1,#f1,#k1,#p1").click(function(){
+$(this).css("color","green");
+});
+
+$("#b1,#c1,#n1,#o1").click(function(){
+$(this).css("color","blue");
+});
+$("#d1,#g1,#j1,#m1").click(function(){
+$(this).css("color","red");
+});
+$("#e1,#i1,#h1,#l1").click(function(){
+$(this).css("color","brown");
+});
+
+
+</script>
+</body>
+
+
+
+</html>
